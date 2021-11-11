@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import Dusk from '@xams-framework/dusk';
 
@@ -15,12 +15,3 @@ const app = new Dusk({
 });
 
 app.startup();
-
-
-// @ts-ignore
-if (module.hot) {
-    // @ts-ignore
-    module.hot.accept(() => {
-        app.startup();
-    });
-}

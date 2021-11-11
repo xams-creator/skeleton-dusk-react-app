@@ -1,0 +1,13 @@
+{
+    "description": "xams.serve.json,执行 xams build 结束后,cd build & xams serve 时可用，配合 package.json的homepage+browser router 测试，可能需要修改下面的几个配置，后续会放到cli内",
+    "webpack": {
+        "devServer": {
+            "contentBasePublicPath": "/",
+            "publicPath": "/",
+            "historyApiFallback": {
+                "disableDotRule": true,
+                "index": "/"
+            }
+        }
+    }
+}
